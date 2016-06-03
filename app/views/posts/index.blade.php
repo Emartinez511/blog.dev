@@ -16,10 +16,10 @@
   <div class="row">
     <div class="col s12 m9 l9">
       @foreach ($posts as $post)
-        <div id="{{{$post->id}}}" class="section scrollspy z-depth-1 #ffffff white">
-          <h3><a href="{{{action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a></h3>
-          <p>{{{$post->description}}}</p>
-          <p> Created on : {{{$post->created_at}}}</p>
+        <div id="{{{$post->id}}}" class="section scrollspy z-depth-1 #ffffff white index_posts">
+          <h3 class="index_posts"><a href="{{{action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a></h3>
+          <p class="index_posts">{{{$post->description}}}</p>
+          <p class="index_posts"> Created on : {{{$post->created_at}}}</p>
         </div>
       @endforeach
     </div>
