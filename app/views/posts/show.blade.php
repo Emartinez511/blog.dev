@@ -9,8 +9,10 @@
 
 @stop
 @section('content')
-<h1>POST</h1>
-
-<h3>{{{$post->title}}}</h3>
-<p>{{{$post->description}}}</p>
+<div class="row">
+    <div class="z-depth-1 col s12 m9 l9 #ffffff white">
+        <h3>{{{$post->title}}}</h3>
+        <p>{{{$post->description}}}</p>
+        </div>
+</div>
 @stop
