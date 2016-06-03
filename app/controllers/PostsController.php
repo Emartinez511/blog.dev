@@ -84,7 +84,22 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		    // attempt validation
+		    if ($validator->fails()) {
+		        // validation failed, redirect to the post create page with validation errors and old inputs
+		        return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+			$post = Post::find($id);
+			$post->title = Input::get('title');
+			$post->description = Input::get('description');
+			$post->user_id = User::first()->id;
+
+			if($post->save()) {
+				return Redirect::action('PostsController@show', $post->id);
+			}
+		}
 	}
 
 
