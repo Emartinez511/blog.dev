@@ -30,16 +30,4 @@
 
     </div>
 
-
-
-
-
-  <!-- <form class="col s12" method="POST" action="{{{ action('PostsController@store') }}}"> -->
-        <!-- <input id="input_text" type="text" length="50" name="title" value="{{{ Input::old('title') }}}"> -->
-        <!-- <label for="input_text">TITLE</label> -->
-        <!-- <textarea id="textarea1" class="materialize-textarea" length="500" name="description">{{{ Input::old('description') }}}</textarea> -->
-        <!-- <label for="textarea1">Textarea</label> -->
-    <!-- <button class="btn waves-effect waves-light z-depth-1" type="submit" name="action">Post
-    </button> -->
-  <!-- </form> -->
 @stop
