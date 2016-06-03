@@ -9,20 +9,21 @@
 
 @stop
 @section('content')
-
-<h1>All Post</h1>
-  <div class="row z-depth-1">
-    <div class="col s12 m9 l10">
+<div class="right-align">
+	<p>{{ $posts->links() }}</p>
+</div>
+<!-- <h1>All Post</h1> -->
+  <div class="row">
+    <div class="col s12 m9 l9">
       @foreach ($posts as $post)
-        <div id="{{{$post->id}}}" class="section scrollspy">
+        <div id="{{{$post->id}}}" class="section scrollspy z-depth-1 #ffffff white">
           <h3><a href="{{{action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a></h3>
           <p>{{{$post->description}}}</p>
           <p> Created on : {{{$post->created_at}}}</p>
         </div>
       @endforeach
     </div>
-
-    <div class="col hide-on-small-only m3 l2">
+    <div class="col hide-on-small-only m3 l2 offset-l1">
       <ul class="section table-of-contents fixed">
       @foreach ($posts as $post)
 				<li><a href="#{{{$post->id}}}">{{{$post->title}}}</a></li>
@@ -30,6 +31,10 @@
 	    </ul>
     </div>
 </div>
+<div class="right-align z-depth-1 #90a4ae blue-grey lighten-2">
+	<p>{{ $posts->links() }}</p>
+</div>
+
 <script>
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
