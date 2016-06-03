@@ -15,3 +15,19 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/resume', 'HomeController@resume');
+
+
+Route::get('/portfolio', 'HomeController@portfolio');
+
+
+Route::get('/rolldice/{guess}', 'HomeController@rollDice');
+
+Route::resource('posts', 'PostsController');
+
+Route::get('orm-test', function ()
+{
+	$post = Post::find(9);
+	$post->delete();
+});
