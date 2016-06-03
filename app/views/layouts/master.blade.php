@@ -5,7 +5,7 @@
     @yield("material_script")
     @section('navbar')
         <nav>
-            <div class="nav-wrapper z-depth-2">
+            <div class="nav-wrapper z-depth-2 #90a4ae blue-grey lighten-2">
               <a href="#" class="brand-logo"><img id="nav_logo" src="/img/biglogo.png"></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="{{{ action('PostsController@index')}}}">HOME</a></li>
@@ -18,7 +18,7 @@
 
 
 </head>
-<body>
+<body class="#eceff1 blue-grey lighten-5">
     @yield('title')
     @yield('content')
 </body>
