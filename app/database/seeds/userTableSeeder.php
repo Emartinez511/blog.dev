@@ -1,10 +1,13 @@
-<<?php
+<?php
 
 class UserTableSeeder extends Seeder
 {
 
     function run()
     {
+
+        DB::table('users')->delete();
+
         $user = new User();
         $user->email = 'emartinez511@gmail.com';
         $user->username = 'emartinez511';
