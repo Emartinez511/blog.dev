@@ -11,8 +11,18 @@
 @section('content')
 <div class="row">
     <div class="z-depth-1 col s12 m9 l9 #ffffff white">
-        <h3>{{{$post->title}}}</h3>
-        <p>{{{$post->description}}}</p>
+        <h3 class="index_posts">{{{$post->title}}}</h3>
+        <p class="index_posts">
+            <small> Created on :
+                {{{
+                    $post
+                        ->created_at
+                        ->setTimezone('America/Chicago')
+                        ->diffForHumans()
+                }}}
+            </small>
+        </p>
+        <p class="index_posts">{{{$post->description}}}</p>
         </div>
 </div>
 @stop
