@@ -1,0 +1,44 @@
+#nav_logo {
+    height: 60px;
+    width: 60px;
+}
+
+.index_posts {
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#404 {
+    margin: 0;
+    padding: 0;
+}
+
+#metal_gear {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.text_over {
+    z-index: 2;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+
+}
+
+#back_home {
+    left: 65%;
+}
