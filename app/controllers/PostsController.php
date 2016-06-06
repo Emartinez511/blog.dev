@@ -37,17 +37,19 @@ class PostsController extends \BaseController {
 		    // attempt validation
 		    if ($validator->fails()) {
 		        // validation failed, redirect to the post create page with validation errors and old inputs
-		        return Redirect::back()->withInput()->withErrors($validator);
-		} else {
-			$post = new Post();
-			$post->title = Input::get('title');
-			$post->description = Input::get('description');
-			$post->user_id = User::first()->id;
+				return Redirect::back()->withInput()->withErrors($validator);
+			} else {
+				$post = new Post();
+				$post->title = Input::get('title');
+				$post->description = Input::get('description');
+				$post->user_id = User::first()->id;
 
-			if($post->save()) {
-				return Redirect::action('PostsController@show', $post->id);
+				if($post->save()) {
+					Log::info("$post");
+					Session::flash('successMessage', 'Post has been saved');
+					return Redirect::action('PostsController@show', $post->id);
+				}
 			}
-		}
 	}
 
 	/**
@@ -89,7 +91,7 @@ class PostsController extends \BaseController {
 		    // attempt validation
 		    if ($validator->fails()) {
 		        // validation failed, redirect to the post create page with validation errors and old inputs
-		        return Redirect::back()->withInput()->withErrors($validator);
+				return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			$post = Post::find($id);
 			$post->title = Input::get('title');
@@ -97,6 +99,7 @@ class PostsController extends \BaseController {
 			$post->user_id = User::first()->id;
 
 			if($post->save()) {
+				Session::flash('successMessage', 'Edit saved');
 				return Redirect::action('PostsController@show', $post->id);
 			}
 		}
