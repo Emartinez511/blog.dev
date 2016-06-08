@@ -42,4 +42,36 @@ public function portfolio()
 	return View::make('portfolio');
 }
 
+public function showLogin()
+{
+	return View::make('login');
+}
+
+public function doLogin()
+{
+	$validator = Validator::make(Input::all(), User::$rules);
+	if ($validator->fails()) {
+		Session::flash('errorMessage', 'Something went wrong');
+		return Redirect::back()->withInput(Input::except('password'))->withErrors($validator);
+	} else {
+		$email = Input::get('email');
+		$password = Input::get('password');
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+			// user is logged in
+			Session::flash('successMessage', 'Login Successful');
+			return Redirect::intended('/posts');
+		} else {
+			// user not logged in
+			Session::flash('errorMessage', 'Wrong username/password');
+			return Redirect::back();
+		}
+	}
+}
+public function doLogout()
+{
+	Auth::logout();
+	Session::flash('message', 'Logout Successful');
+	return Redirect::back();
+}
+
 }
