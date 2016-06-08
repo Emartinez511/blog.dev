@@ -9,6 +9,7 @@
 
 @stop
 @section('content')
+<h2>BLOG</h2>
 <div class="row">
     <div class="z-depth-1 col s12 m9 l9 #ffffff white">
         <h3 class="index_posts">{{{$post->title}}}</h3>
@@ -22,7 +23,7 @@
                 }}}
             </small>
         </p>
-        <p class="index_posts">{{{$post->description}}}</p>
+        <p class="index_posts flow-text">{{{$post->description}}}</p>
         </div>
 </div>
 @stop

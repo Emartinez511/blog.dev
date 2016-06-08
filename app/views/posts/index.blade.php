@@ -9,6 +9,7 @@
 
 @stop
 @section('content')
+<h2>BLOG</h2>
 <div class="right-align">
 	<p>{{ $posts->links() }}</p>
 </div>
@@ -19,6 +20,9 @@
         <div id="{{{$post->id}}}" class="section scrollspy z-depth-1 #ffffff white index_posts">
 			<h3 class="index_posts"><a href="{{{action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a></h3>
 			<p class="index_posts">
+				<small>written by: {{{$post->user->username}}}</small>
+			</p>
+			<p class="index_posts">
 				<small> Created on :
 					{{{
 						$post
@@ -28,7 +32,7 @@
 					}}}
 				</small>
 			</p>
-			<p class="index_posts">{{{$post->description}}}</p>
+			<p class="index_posts flow-text">{{{$post->description}}}</p>
         </div>
       @endforeach
     </div>
