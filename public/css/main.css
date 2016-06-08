@@ -42,3 +42,7 @@
 #back_home {
     left: 65%;
 }
+
+.parallax-container {
+      height: 300px;
+    }
