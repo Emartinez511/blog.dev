@@ -9,7 +9,6 @@
 
 @stop
 @section('content')
-<h2>BLOG</h2>
 <div class="right-align">
 	<p>{{ $posts->links() }}</p>
 </div>
@@ -21,8 +20,6 @@
 			<h3 class="index_posts"><a href="{{{action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a></h3>
 			<p class="index_posts">
 				<small>written by: {{{$post->user->username}}}</small>
-			</p>
-			<p class="index_posts">
 				<small> Created on :
 					{{{
 						$post
@@ -38,6 +35,7 @@
     </div>
     <div class="col hide-on-small-only m3 l2 offset-l1">
       <ul class="section table-of-contents fixed">
+		  		<li><h3>Blog</h3></li>
       @foreach ($posts as $post)
 				<li><a href="#{{{$post->id}}}">{{{$post->title}}}</a></li>
       @endforeach
