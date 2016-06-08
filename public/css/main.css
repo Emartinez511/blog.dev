@@ -46,3 +46,8 @@
 .parallax-container {
       height: 300px;
     }
+#blog_header {
+    font-size: 100px;
+    text-align: center;
+    font-weight: Thin;
+}
