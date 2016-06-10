@@ -35,7 +35,7 @@
     </div>
     <div class="col hide-on-small-only m3 l2 offset-l1">
       <ul class="section table-of-contents fixed">
-		  		<li><h3>Blog</h3></li>
+		  			<li><h3>Blog</h3></li>
       @foreach ($posts as $post)
 				<li><a href="#{{{$post->id}}}">{{{$post->title}}}</a></li>
       @endforeach
