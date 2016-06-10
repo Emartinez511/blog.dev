@@ -10,7 +10,7 @@
 @stop
 @section('content')
 
-    <div class="row grey lighten-5">
+    <div class="col s12 m6 grey lighten-5 z-depth-2 index_posts">
         <h1>LOGIN</h1>
         {{ Form::open(array('action' => 'HomeController@doLogin', 'method' => 'Post')) }}
           <div class="row">
@@ -24,7 +24,7 @@
                   {{ Form::label('password', 'Password') }}
                   {{ Form::password('password') }}
               </div>
-      </div>
+          </div>
           {{ Form::submit('login', null, ['class' => 'btn waves-effect waves-light z-depth-1' ])}}
         {{ Form::close() }}
       </div>
