@@ -22,7 +22,6 @@
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
-    width: auto;
     height: auto;
     z-index: 1;
 }
@@ -75,6 +74,7 @@
 iframe {
     width: 250px;
     height: 200px;
+    margin-left: 20px;
 }
 
 .left_side {
@@ -149,4 +149,20 @@ iframe {
     width: 200px;
     height: 70px;
     margin-top: 20px;
+}
+
+.main_name {
+    color: orange;
+}
+
+.Resume {
+    color: #1FCAC4;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.btn_top {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
 }
