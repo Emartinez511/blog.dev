@@ -1,32 +1,26 @@
 @extends('layouts.master')
-@section('material_script')
-    <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="/css/main.css">
 
-@stop
 @section('content')
+<div class="contatiner-fluid show_page">
 
-    <div class="col s12 m6 grey lighten-5 z-depth-2 index_posts">
+    <div class="col-sm-4 login_form">
         <h1>LOGIN</h1>
         {{ Form::open(array('action' => 'HomeController@doLogin', 'method' => 'Post')) }}
-          <div class="row">
-            <div class="input-field col s12 m6 z-depth-1 #ffffff white">
-              {{Form::text('email', null, [ 'value' => "{{{ Input::old('email') }}}", 'type' => 'email', 'class' => 'validate' ])}}
-              {{Form::label('email', 'Email')}}
+          <div class="form-group">
+            <div class="input-field">
+                {{Form::label('email', 'Email')}}
+              {{Form::text('email', null, [ 'value' => "{{{ Input::old('email') }}}", 'type' => 'email', 'class' => 'form-control' ])}}
             </div>
           </div>
-          <div class="row">
-              <div class="input-field col s12 m6 z-depth-1 #ffffff white">
+          <div class="form-group">
+              <div class="input-field">
                   {{ Form::label('password', 'Password') }}
-                  {{ Form::password('password') }}
+                  {{ Form::password('password', ['class' => 'form-control']) }}
               </div>
           </div>
           {{ Form::submit('login', null, ['class' => 'btn waves-effect waves-light z-depth-1' ])}}
         {{ Form::close() }}
       </div>
 
+</div>
 @stop

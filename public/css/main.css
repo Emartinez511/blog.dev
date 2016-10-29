@@ -1,168 +1,101 @@
-#nav_logo {
-    height: 60px;
-    width: 60px;
+
+
+body {
+    background-image: url("/img/Background.png");
 }
 
-.index_posts {
-    margin: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+.landing_segment {
+    margin-top: 125px;
 }
 
-#404 {
-    margin: 0;
-    padding: 0;
+.homepage {
+    font-family: 'Catamaran', sans-serif;
 }
 
-#metal_gear {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-.text_over {
-    z-index: 2;
-    position: relative;
-    background: rgba(0, 0, 0, 0.4);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-
-}
-
-#back_home {
-    left: 65%;
-}
-
-.parallax-container {
-      height: 300px;
-    }
-#blog_header {
-    font-size: 100px;
-    text-align: center;
-    font-weight: Thin;
-}
-
-
-#login_btn {
-    margin-top: 4px;
-}
-
-.nav-tabs {
-    color: black;
-}
-
-.nav_top {
-    margin-top: 5px;
-    background: white;
-}
-
-.nav_pad {
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: 5px;
-}
-
-iframe {
-    width: 250px;
-    height: 200px;
-    margin-left: 20px;
-}
-
-.left_side {
-    /*background: #84908F;*/
-    padding-top: 90px;
-    background-image: url("/img/stardust.png");
-    color: white;
-
-}
-
-.middle_side {
-    /*background: #B5B5B5;*/
-    background-image: url("/img/youtube.jpg");
-    height: auto;
-    color: white;
-
-}
-
-.right_side {
-    background: #B5B5B5;
-}
-
-.big_logo {
-    max-width: 100%;
-    height: auto;
-    height: 175px;
-    width: 600px;
-
-}
-
-.games_img {
-    height: 200px;
-    width: 250px;
-}
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-
-.third_row {
-    /*background: #D6B9B9;*/
-    background-image: url("/img/purty_wood.png");
-
-}
-
-.fourth_row {
-    background-image: url("/img/pink_rice.png");
-}
-
-#octocat {
-    width: 50px;
-    height: 40px;
-}
-
-.footer {
-    padding-top: 30px;
-    background: #69C5BE;
-}
-
-.foot {
-    padding-top: 10px;
-}
-
-.quote_youtube {
-    color: white;
-}
-
-.contact {
-    width: 200px;
-    height: 70px;
-    margin-top: 20px;
-}
-
-.main_name {
-    color: orange;
-}
-
-.Resume {
-    color: #1FCAC4;
-    font-weight: lighter;
-    font-size: 50px;
-}
-
-.btn_top {
+.nav_segment {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 70px;
+    padding-top: 8px;
+    color: rgb(200, 200, 200);
     font-weight: bold;
-    color: black;
     font-size: 15px;
 }
+
+.about_segment {
+    background-color: rgba(255, 255, 255, .8);
+    margin-top: 30px;
+}
+
+#about_header {
+    padding-top: 40px;
+}
+
+.portfolio_segment {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, .9);
+
+}
+
+.portfolio_header {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.resume_segment {
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+#github_logo {
+    height: 50px;
+    width: 50px;
+    opacity: .3;
+    margin-top: 10px;
+}
+
+#linkedin_logo {
+    height: 50px;
+    width: 50px;
+    opacity: .3;
+    margin-top: 10px;
+}
+
+#quote_img {
+    background-color: rgba(255, 255, 255, .7);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about_quote {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, .5);
+    color: #136a86;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.about_pic {
+    margin-top: 30px;
+    opacity: .8;
+}
+
+#about_me {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+#quote {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}*/

@@ -1,106 +1,127 @@
 @extends('layouts.master')
 
-@section('bootstrap')
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-@stop
-
-
 @section('content')
-    <div class="container-fluid">
-      <div class="row row-eq-height">
-        <div class="col-sm-9 left_side">
-          <h2 class="main_name">Edric Martinez</h2>
-          <h1>Full Stack Web Developer</h2>
-          <blockquote>
-            <p class="lead">I'm a Entry-level LAMP+J Developer that loves to problem solve and learn new things. Im currently proficient in HTML, CSS, JavaScript,  jQuery, AJAX, PHP, MySQL, Laravel, GitHub, Twitter Bootstrap, Pug(formally Jade).</p>
-          </blockquote>
+    <div class="container homepage">
+        <div class="row social_media">
+            <div class="col-md-1 pull-right">
+                <a href="https://www.linkedin.com/in/edricmartinez"><img class="img-responsive center-block" src="img/linkedin.png" id="linkedin_logo"/></a>
+            </div>
+            <div class="col-md-1 pull-right">
+                <a href="https://github.com/Emartinez511"><img class="img-responsive center-block" src="img/github.png" id="github_logo" /></a>
+            </div>
         </div>
-        <div class="col-sm-3 middle_side">
-          <h5 class="text-center">Video of the Week</h5>
-            <iframe src="https://www.youtube.com/embed/wzAWI9h3q18" frameborder="0" allowfullscreen></iframe>
-            <p class="lead">
-                <small class="quote_youtube">"I'm building the homepage to my site using Jade and testing it out. Jade is a fun templating engine that cuts down on reduntant HTML and in my view provides cleaner looking code. After learning Jade I want to move to SASS."</small>
-            </p>
+        <div class="row">
+            <div class="col-md-12 landing_segment">
+                <img class="img-responsive center-block" src="img/landing_logo.png" />
+            </div>
         </div>
-      </div>
-      <div class="row third_row">
-        <h2 name"Portfolio" id"portfolio">Portfolio Projects</h2>
-        <div class="col-sm-2"><img src="/img/simon_image.png" alt="" class="img-thumbnail games_img">
-          <h5>Simple Simon</h5>
-          <p>This the a simple simon game.</p>
+        <div class="row nav_segment">
+            <div class="col-md-2 col-md-offset-2 text-center">
+                <p>
+                    HOME
+                </p>
+            </div>
+            <div class="col-md-2 text-center">
+                <p>
+                    PORTFOLIO
+                </p>
+            </div>
+            <div class="col-md-2 text-center">
+                <p>
+                    RESUME
+                </p>
+            </div>
+            <div class="col-md-2 text-center">
+                <p>
+                    CONTACT ME
+                </p>
+            </div>
         </div>
-        <div class="col-sm-2"><img src="/img/calculator_img.png" alt="" class="img-thumbnail games_img">
-          <h5>JavaScript Calculator</h5>
-          <p>This is a JavaScript calculator.</p>
+        <div class="row">
+            <div class="col-md-12 about_quote text-center">
+                <img class="img-responsive center-block" src="/img/quote.png" alt="quote" id="quote_img" />
+            </div>
         </div>
-        <div class="col-sm-2"><img src="/img/mole_img.png" alt="" class="img-thumbnail games_img">
-          <h5>Whack-a-Gopher</h5>
-          <p>This is a classic whack-a-mole game.</p>
+        <div class="row">
+            <div class="col-md-7 about_segment">
+                <h2 id="about_header">
+                    About Me
+                </h2>
+                <p id="about_me">
+                    I'm a Entry-level LAMP+J Developer that loves to problem solve and learn new things. Im 29 years old and currently live in San Antonio.
+                    I graduated in 2011 with my BS in Biology from the University of Texas San Antonio. In 2016 I attended Codeup's Full Stack Development Immersion Program.
+                    I am currently seeking a Jr Developer Position.
+                </p>
+            </div>
+            <div class="col-md-5 text-center about_pic">
+                <img class="img-responsive center-block" src="img/photo_me.png" />
+            </div>
         </div>
-      </div>
-      <div class="row fourth_row row-eq-height">
-        <div class="col-sm-6">
-          <h3 class="text-center Resume" name="resume" id="resume">Resume</h3>
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Skills</a>
+        <div class="row portfolio_segment">
+            <div class="col-md-12">
+                <h3 class="text-center portfolio_header">
+                    FEATURED PROJECT
+                </h3>
+                <h4 class="text-center">
+                    Ebtracker.com
                 </h4>
-              </div>
+                <p class="text-center">
+                    This a CRUD web application for inventory and shipment. The Distributors are able to created a invoice for desired products and send it to the Supplier.
+                    Suppliers than can create new shipments and add unique information for the the supplies.
+                    Once done they then receive a QR code for shipping and receiving. When received at destination Facility it inputs the products into their inventory.
+                    Once a product it used it will remove it from inventory when scanned and also updates the distributor of the use of the product.
+                    Utilizing PHP, Laravel, Html, Css, Javascript, and MySQL this project was created within 2 weeks.
+                </p>
+                <img class="img-responsive center-block" src="/img/portfolio_eb.png" alt="" />
+                <button>View Ebtracker.com</button>
+                <button>View Portfolio</button>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                <ul>
-                  <li>HTML, CSS, JavaScript,  jQuery, AJAX, PHP, MySQL, Laravel, GitHub, Twitter Bootstrap, Pug(formally Jade).</li>
-                  <li>Ability to quickly and efficiently learn new languages and software as needed.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Projects</a>
-                </h4>
-              </div>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                <h5 class="text-left">Capstone</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                <h5 class="text-left">Adlister</h5>
-                <p>A Full-stack PHP Craiglist clone built using no framework. Classes were built to allow users authentication and post/manage ads created.</p>
-                <h5 class="text-left">Whack-a-Gopher</h5>
-                <p>A classic Whack-a-Mole game that uses front-end DOM manipulation by utilizing jQuery and Javascript. </p>
-              </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Education</a>
-                </h4>
-              </div>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                <h5 class="text-left">Univeristy of Texas at San Antonio - Bacholers of Science in Biology</h5>
-                <p>I graduated in 2011. In 2013 I also took additional education courses in Engineering Physics I & II, Calculus II, and Linear Algebra.</p>
-                <H5>Codeup — FULL-STACK WEB DEVELOPMENT</H5>
-                <p>Completed 16-week immersive program in full stack technologies, spent 480+ hours learning curriculum and building real work projects. </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-sm-6 text-center" name="contact" id="contact"><img src="/img/contact.png" class="img-fluid contact"></div>
-      </div>
-      <div class="row footer">
-        <div class="col-sm-12 text-center"><a href="">|  Home |</a><a href="">| Portfolio |</a><a href="">| Resume |</a><a href="">| Contact Me |</a>
-          <p>check out my </p><img id="octocat" src="/img/Octocat.png">
+        <div class="row resume_segment">
+            <div class="col-md-12">
+                <h3 class="text-center resume_header">
+                    RESUME
+                </h3>
+
+            </div>
+            <div class="col-md-6 text-center resume_img">
+                <img src="/img/resume.png" alt="resume_photo" />
+            </div>
+            <div class="col-md-6 text-center skills_list">
+                <h4>Skillset</h4>
+                <dl>
+                    <h5>BACK-END DEVELOPMENT:</h5>
+                    <dd>PHP</dd>
+                    <dd>AJAX</dd>
+                    <dd>MySQL</dd>
+                    <dd>Laravel</dd>
+                    <dd>APIs</dd>
+                </dl>
+                <dl>
+                    <h5>FRONT-END DEVELOPMENT:</h5>
+                </dl>
+
+                    <dd>HTML5</dd>
+                    <dd>Javascript</dd>
+                    <dd>JQuery</dd>
+                    <dd>Twitter Bootstrap</dd>
+                    <dd>Adobe Photoshop</dd>
+                    <dd>CSS</dd>
+                    <dd>SaSS</dd>
+                    <dd>Wireframing</dd>
+
+                <dl>
+                    <h5>SOURCE CONTROL:</h5>
+                    <dd>GitHub</dd>
+                    <dd>BitBucket</dd>
+                </dl>
+            </div>
         </div>
-      </div>
+        <div class="row footer">
+            <div class="col-md-6">
+                <
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
