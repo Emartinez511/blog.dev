@@ -28,6 +28,8 @@ body {
 
 #about_header {
     padding-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .portfolio_segment {
@@ -86,6 +88,7 @@ body {
     font-size: 20px;
     padding-bottom: 60px;
 }
+
 
 #quote {
     font-size: 30px;

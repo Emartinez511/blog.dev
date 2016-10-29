@@ -54,7 +54,7 @@
                 </p>
             </div>
             <div class="col-md-5 text-center about_pic">
-                <img class="img-responsive center-block" src="img/photo_me.png" />
+                <img class="img-responsive center-block" src="/img/Photo_me.png" />
             </div>
         </div>
         <div class="row portfolio_segment">
