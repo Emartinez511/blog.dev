@@ -78,6 +78,22 @@
                 <a href="http://ebtracker.com"><button type="button" class="btn btn-danger portfolio_buttons">View Ebtracker.com</button></a>
                 <button type="button" class="btn btn-warning portfolio_buttons">View Portfolio</button>
             </div>
+        <div class="row porfolio_segment">
+                <h3 class="text-center portfolio_header">
+                    Material Design Photoshop Work
+                </h3>
+            <div class="col-md-6">
+                <h5 class="text-center">Before</h5>
+                <img class="img-responsive" src="img/doctor-strange-poster-art.jpg" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-center">After</h5>
+                <img class="img-responsive" src="img/DRS.jpg" alt="" />
+            </div>
+            <div class="col-md-12 text-center">
+                <h4>I recently started in my free time and will upload more when finished.</h4>
+            </div>
+        </div>
         </div>
         <div class="row resume_segment">
             <div class="col-md-12">
