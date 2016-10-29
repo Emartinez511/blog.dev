@@ -62,7 +62,7 @@
                 <h3 class="text-center portfolio_header">
                     FEATURED PROJECT
                 </h3>
-                <h4 class="text-center">
+                <h4 class="text-center portfolio_header">
                     Ebtracker.com
                 </h4>
                 <p class="text-center">
@@ -73,8 +73,10 @@
                     Utilizing PHP, Laravel, Html, Css, Javascript, and MySQL this project was created within 2 weeks.
                 </p>
                 <img class="img-responsive center-block" src="/img/portfolio_eb.png" alt="" />
-                <button>View Ebtracker.com</button>
-                <button>View Portfolio</button>
+            </div>
+            <div class="col md-12 text-center portfolio_buttons">
+                <a href="http://ebtracker.com"><button type="button" class="btn btn-danger portfolio_buttons">View Ebtracker.com</button></a>
+                <button type="button" class="btn btn-warning portfolio_buttons">View Portfolio</button>
             </div>
         </div>
         <div class="row resume_segment">
@@ -85,7 +87,7 @@
 
             </div>
             <div class="col-md-6 text-center resume_img">
-                <img src="/img/resume.png" alt="resume_photo" />
+                <a href="img/Resume_copy.pdf" target="_blank"><img src="/img/resume.png" alt="resume_photo" action="img/Resume_copy.pdf"/></a>
             </div>
             <div class="col-md-6 text-center skills_list">
                 <h4>Skillset</h4>

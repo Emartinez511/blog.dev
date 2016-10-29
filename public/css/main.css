@@ -4,6 +4,10 @@ body {
     background-image: url("/img/Background.png");
 }
 
+.portfolio_buttons {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 .landing_segment {
     margin-top: 125px;
 }
@@ -39,14 +43,21 @@ body {
 }
 
 .portfolio_header {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 20px;
+    font-weight: bolder;
 }
 
 .resume_segment {
     margin-top: 40px;
     padding-top: 20px;
     background-color: rgba(255, 255, 255, .9);
+}
+
+
+.resume_header {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #github_logo {
@@ -84,8 +95,8 @@ body {
 }
 
 #about_me {
-    padding-top: 30px;
-    font-size: 20px;
+    padding-top: 20px;
+    font-size: 18px;
     padding-bottom: 60px;
 }
 
