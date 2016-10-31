@@ -90,6 +90,14 @@
                 <h5 class="text-center">After</h5>
                 <img class="img-responsive" src="img/DRS.jpg" alt="" />
             </div>
+            <div class="col-md-6">
+                <h5 class="text-center">Before</h5>
+                <img class="img-responsive" src="img/captain_america.jpg" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-center">After</h5>
+                <img class="img-responsive" src="img/cap.jpg" alt="" />
+            </div>
             <div class="col-md-12 text-center">
                 <h4>I recently started in my free time and will upload more when finished.</h4>
             </div>
