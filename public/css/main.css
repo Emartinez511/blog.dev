@@ -4,31 +4,36 @@ body {
     background-image: url("/img/Background.png");
 }
 
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+
+    }
+
 .portfolio_buttons {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .landing_segment {
     margin-top: 125px;
 }
 
-.homepage {
-    font-family: 'Catamaran', sans-serif;
-}
-
-.nav_segment {
-    background-color: rgba(255, 255, 255, 0.2);
+.navbar-custom {
     margin-top: 70px;
     padding-top: 8px;
-    color: rgb(200, 200, 200);
-    font-weight: bold;
-    font-size: 15px;
 }
 
-.about_segment {
-    background-color: rgba(255, 255, 255, .8);
-    margin-top: 30px;
+.about_landing {
+    background-color: white;
 }
+
 
 #about_header {
     padding-top: 40px;
@@ -39,6 +44,12 @@ body {
 .portfolio_segment {
     margin-top: 40px;
     background-color: rgba(255, 255, 255, .9);
+
+}
+
+.aboutMe {
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -82,16 +93,15 @@ body {
 }
 
 .about_quote {
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: rgba(255, 255, 255, .5);
-    color: #136a86;
     font-size: 30px;
     font-style: italic;
 }
 
 .about_pic {
     margin-top: 30px;
-    opacity: .8;
+    margin-bottom: 20px;
 }
 
 #about_me {

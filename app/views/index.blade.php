@@ -10,12 +10,13 @@
                 <a href="https://github.com/Emartinez511"><img class="img-responsive center-block" src="img/github.png" id="github_logo" /></a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 landing_segment">
-                <img class="img-responsive center-block" src="img/landing_logo.png" />
+            <div class="row">
+                <div class="col-md-12 landing_segment">
+                    <img class="img-responsive center-block" src="img/landing_logo.png" />
+                </div>
             </div>
-        </div>
-        <div class="row nav_segment">
+            @include('partials.navbar')
+        {{-- <div class="row nav_segment">
             <div class="col-md-2 col-md-offset-2 text-center">
                 <p>
                     HOME
@@ -36,14 +37,14 @@
                     CONTACT ME
                 </p>
             </div>
-        </div>
+        </div> --}}
         <div class="row">
             <div class="col-md-12 about_quote text-center">
                 <img class="img-responsive center-block" src="/img/quote.png" alt="quote" id="quote_img" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-7 about_segment">
+        <div class="row aboutMe">
+            <div class="col-md-7">
                 <h2 id="about_header">
                     About Me
                 </h2>
@@ -57,7 +58,7 @@
                 <img class="img-responsive center-block" src="/img/Photo_me.png" />
             </div>
         </div>
-        <div class="row portfolio_segment">
+        <div class="row portfolio_segment" id="portfolio">
             <div class="col-md-12">
                 <h3 class="text-center portfolio_header">
                     FEATURED PROJECT
@@ -82,19 +83,19 @@
                 <h3 class="text-center portfolio_header">
                     Material Design Photoshop Work
                 </h3>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <h5 class="text-center">Before</h5>
                 <img class="img-responsive" src="img/doctor-strange-poster-art.jpg" alt="" />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <h5 class="text-center">After</h5>
                 <img class="img-responsive" src="img/DRS.jpg" alt="" />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <h5 class="text-center">Before</h5>
                 <img class="img-responsive" src="img/captain_america.jpg" alt="" />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <h5 class="text-center">After</h5>
                 <img class="img-responsive" src="img/cap.jpg" alt="" />
             </div>
@@ -103,7 +104,7 @@
             </div>
         </div>
         </div>
-        <div class="row resume_segment">
+        <div class="row resume_segment" id="resume">
             <div class="col-md-12">
                 <h3 class="text-center resume_header">
                     RESUME
@@ -149,11 +150,6 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function() {
-          $('.collapse').collapse()
-      });
-    </script>
+
+
 @stop
