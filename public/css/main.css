@@ -4,17 +4,16 @@ body {
     background-image: url("/img/Background.png");
 }
 
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  text-align: center;
+}
 
-    .navbar .navbar-collapse {
-        text-align: center;
-
-    }
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
 .portfolio_buttons {
     margin-top: 20px;
