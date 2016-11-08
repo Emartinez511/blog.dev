@@ -77,7 +77,7 @@
             </div>
             <div class="col md-12 text-center portfolio_buttons">
                 <a href="http://ebtracker.com"><button type="button" class="btn btn-danger portfolio_buttons">View Ebtracker.com</button></a>
-                <button type="button" class="btn btn-warning portfolio_buttons">View Portfolio</button>
+                <a href="http://emartinez511.github.io/portfolio.html"><button type="button" class="btn btn-warning portfolio_buttons">View Portfolio</button></a>
             </div>
         <div class="row porfolio_segment">
                 <h3 class="text-center portfolio_header">
